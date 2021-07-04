@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://cr1deg0.github.io/Article_Preview/)
+- Live Site URL: [https://cr1deg0.github.io/Article_Preview/]
 
 ## My process
 
@@ -48,7 +48,7 @@ correctly..
 
 ### Useful resources
 
-- [Example resource 1](https://css-tricks.com/snippets/css/css-triangle/) - Article from CSS tricks on how to create a CSS triangle. I've used it in the socual media
+- [https://css-tricks.com/snippets/css/css-triangle/](https://css-tricks.com/snippets/css/css-triangle/) - Article from CSS tricks on how to create a CSS triangle. I've used it in the socual media
 box of the desktop layout.
 
 ## Author
