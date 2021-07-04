@@ -1,0 +1,182 @@
+:root{
+    --clr-800: hsl(217, 19%, 35%);
+    --clr-700: hsl(214, 17%, 51%);
+    --clr-400: hsl(212, 23%, 69%);
+    --crl-300: hsl(210, 46%, 95%);
+    }    
+*{
+    box-sizing: border-box;
+}
+body,
+h1,
+h3,
+p,
+img{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--clr-700);  
+}
+
+h1, h3{
+    color: var(--clr-800);
+    font-weight: 700;
+}
+body{
+  background-color: var(--crl-300);
+}
+.card{
+    /*card wrap to be able to position Social Media share div*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--crl-300);
+  }
+.container{ /*flexbox*/
+    display: flex;
+    flex-direction: row;
+    width:730px;
+    height:280px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.img-box{ /*flexbox first column: product image*/
+    min-width: 289px;
+}
+    .img-product{
+        display: block; 
+        width: auto;
+        height: 100%;
+}
+.text-box{ /*flexbox second column: text description*/
+    padding: 2rem 2rem 0 2.5rem;
+    background-color: white;
+}
+.text-box>p{
+    padding-top: 0.75rem;
+}
+h1{
+    font-size: 1.25rem;
+}
+.grid{ /*profile and social media grid*/
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding-top: 1.25rem;
+}
+.avatar{ /*grid column 1: thumbnail picture*/
+    max-width: 40px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+.col_2>p{ /*grid column 2: Name and date*/
+    color: var(--clr-400);   
+}
+.col_3{
+    padding-top: 2px;;
+}
+.share-button{/*grid column 3: social media arrow icon*/
+    background-color: var(--crl-300);
+    border-radius: 200px;
+    width: 32px;
+    height: 32px;  
+    /*center arrow image in div container*/  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.share-button:hover, .share-button:focus, .share-button.active{ 
+    background-color: var(--clr-700);     
+}
+.share-button:hover>img,.share-button:focus>img, .share-button.active>img{
+    filter: brightness(0) invert(1);
+}
+/*Below this point: Social Media Share box: absolute position relative to .card*/
+.share-box{
+    position: absolute;
+    bottom: 80px;
+    left: 544px;
+    display: none;    
+}
+.visible{display: block;}
+.share{ /*Social media share flex-box*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: var(--clr-800);
+    text-align: center;
+    width: 246px;
+    height: 54px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 30px var(--clr-400);
+}
+    .share>div>p{ /*flexbox column 1: SHARE*/
+        font-size: 12px;
+        color: var(--clr-400);
+        letter-spacing: 3px;
+        padding: 0 15px 0 15px;
+    }
+    .icon{ /*flexbox column 2: social media icons */
+        padding: 0 8px 0 8px;
+    }
+.arrow-down { 
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid var(--clr-800);
+    position: relative;
+    left: 103px;
+ }
+/*Above this point: Social Media Share box: absolute position relative to .card*/
+
+@media screen and (max-width: 375px){
+    .container{ /*flexbox*/
+        flex-direction: column;
+        width:325px;
+        height:510px;
+    }
+    .img-product{
+        width: 325px;
+        height: 195px;
+        object-fit: cover;
+        object-position: 50% 30%;         
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .text-box{ 
+        height: 315px;
+        padding: 2rem 2.5rem 0 2rem;
+    }
+    .grid{ /*profile and social media grid*/
+        grid-template-columns: 22% 63% 15%;
+        padding-top: 3rem;
+    }
+    .share-box{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .share{
+        width: 325px;
+        height: 70px;
+        border-radius: 0 0 12px 12px;
+        justify-content: left;
+    }
+    .share>div>p{ /*flexbox column 1: SHARE*/
+        font-size: 14px;
+        letter-spacing: 3px;
+        padding: 0 15px 5px 35px;     
+    }
+    .arrow-down{
+        display: none;
+    }
+    
+  
+}
