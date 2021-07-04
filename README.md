@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/article-preview-component-with-html-css-and-js-E_2oBvair]
 - Live Site URL: [https://cr1deg0.github.io/Article_Preview/]
 
 ## My process
