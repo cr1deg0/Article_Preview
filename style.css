@@ -177,6 +177,9 @@ h1{
     .share-button:hover{
         background-color: var(--crl-300);
     }
+    .share-button:hover>img{
+        filter: brightness(0) invert(0);
+    }
     .arrow-down{
         display: none;
     }
