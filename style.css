@@ -174,12 +174,6 @@ h1{
         letter-spacing: 3px;
         padding: 0 15px 5px 35px;     
     }
-    .share-button:hover{
-        background-color: var(--crl-300);
-    }
-    .share-button:hover>img{
-        filter: brightness(0) invert(0);
-    }
     .arrow-down{
         display: none;
     }
