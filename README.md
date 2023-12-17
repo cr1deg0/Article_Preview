@@ -2,6 +2,8 @@
 
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+<img width="1221" alt="Article Preview" src="https://github.com/cr1deg0/Article_Preview/assets/86016298/04838701-8285-4ae4-8760-f6a3e7414b07">
+
 ## Table of contents
 
 - [Overview](#overview)
